@@ -1,0 +1,16 @@
+{
+  "name": "rgui-sample",
+  "description": "Regular UI - Sample",
+  "version": "0.2.0",
+  "author": "Rainfore <rainforest92@126.com>",
+  "main": "./index.js",
+  "repository": "regular-ui/ui-sample",
+  "homepage": "http://regular-ui.github.io",
+  "bugs": {"url": "http://github.com/regular-ui/ui-sample/issues"},
+  "license": "MIT",
+  "keywords": ["regular", "ui", "sample"],
+  "tags": ["regular", "ui", "sample"],
+  "dependencies": {
+    "rgui-base": "regular-ui/ui-base#feature/v0.2"
+  }
+}

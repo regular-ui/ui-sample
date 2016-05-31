@@ -1,0 +1,4 @@
+<div class="m-sample {class}" z-dis={disabled} r-hide={!visible}>
+    <span class="sample_message">{message}</span>
+    <input class="u-input" r-model={message} readonly={readonly} disabled={disabled} on-input={this._onInput($event)} />
+</div>
