@@ -1,18 +1,13 @@
 # ui-sample
 
-Regular UI - Sample, AnotherSample
+Regular UI - Sample
 
 ## Sample
 
 样例
 
-Demo: http://regular-ui.github.io/ui-sample/sample/index.html
-
-## AnotherSample
-
-另一个样例
-
-Demo: http://regular-ui.github.io/ui-sample/anotherSample/index.html
+基本示例: http://regular-ui.github.io/ui-sample/sample/index.html
+高级案例: http://regular-ui.github.io/ui-sample/sample/case.html
 
 ## Copyright and License
 
