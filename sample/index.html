@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<!-- 该文件由rgui-tools自动生成 -->
+<meta charset="utf-8">
+<title>Regular UI</title>
+<meta name="author" content="Rainfore">
+<meta name="keywords" content="Regular,UI,JavaScript,Framework,MVC,MVVM">
+<meta name="description" content="Regular UI">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="icon" href="http://regular-ui.github.io/img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://regular-ui.github.io/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="http://regular-ui.github.io/css/doc.default.min.css">
+<link rel="stylesheet" href="../css/index.css">
+<!--[if lt IE9]>
+<script>
+(function() {
+    if (!
+    /*@cc_on!@*/
+    0) return;
+    var e = 'abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video'.split(', ');
+    var i= e.length;
+    while (i--)
+        document.createElement(e[i]);
+})();
+</script>
+<![endif]-->
+</head>
+<body>
+<div class="g-top g-top-fixed">
+    <div class="g-topc">
+        <a class="u-logo" href="./"><h1>Regular UI</h1></a>
+    </div>
+</div>
+<div class="g-bd"><div class="g-bdc"><div class="g-mn g-mn-center">
+    <article class="m-article">
+        <h2>样例<small> Sample</small></h2>
+        <p>在<code>index.md</code>文件中，添加该组件的基础文档示例。</p>
+<p>每个示例以<code>&lt;div class=&quot;m-example&quot;&gt;&lt;/div&gt;</code>开头，后面添加相应的代码段。支持的代码段有：</p>
+<ul>
+<li><code>css</code>，会以<code>&lt;style&gt;</code>包裹css代码的形式添加到文档中；</li>
+<li><code>xml</code>，表示Regular模板，如果没有js代码段，会自动创建一个component对象，$inject到<code>.m-example</code>中；</li>
+<li><code>javascript</code>，添加js代码，请自行声明一个component对象。</li>
+</ul>
+<h4 id="-">基本形式</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">sample</span> <span class="cm-tagcm-bracket">/&gt;</span>
+</code></pre>
+<h4 id="message-">Message属性</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">sample</span> <span class="cm-attribute">message</span>=<span class="cm-string">&quot;Test&quot;</span> <span class="cm-tagcm-bracket">/&gt;</span>
+</code></pre>
+<h4 id="-">只读和禁用</h4>
+<div class="m-example"></div>
+
+<pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;g-row&quot;</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;g-col g-col-6&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">sample</span> <span class="cm-attribute">readonly</span> <span class="cm-tagcm-bracketcm-error">/&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+    <span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;g-col g-col-6&quot;</span><span class="cm-tagcm-bracket">&gt;</span><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">sample</span> <span class="cm-attribute">disabled</span> <span class="cm-tagcm-bracketcm-error">/&gt;</span><span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+<span class="cm-tagcm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tagcm-bracket">&gt;</span>
+</code></pre>
+
+    </article>
+</div>
+</div></div><div class="g-ft">
+    <footer class="m-footer">
+        <p><a href="http://regular-ui.github.io/" class="footer_logo"><img src="http://regular-ui.github.io/img/logo-v2.0-bg-48.png" /></p>
+        <p>
+            <a href="https://github.com/regular-ui/regular-ui" target="_blank">GitHub</a> |
+            <a href="https://github.com/regular-ui/regular-ui/issues" target="_blank">Issues</a> |
+            <a href="https://github.com/regular-ui/regular-ui/releases" target="_blank">ChangeLog</a> |
+            <a href="https://github.com/regular-ui/regular-ui/blob/master/CONTRIBUTING.md" target="_blank">Contributing</a>
+        </p>
+        <p>Licensed under <a href="https://github.com/regular-ui/regular-ui/blob/master/LICENSE" target="_blank">MIT license</a>.</p>
+    </footer>
+</div>
+<script src="http://regular-ui.github.io/vendor/regular.min.js"></script>
+<script src="../js/index.js"></script>
+<script>
+var $$ = function(selector){return document.querySelectorAll(selector)};
+</script>
+<script>
+"use strict";
+
+var index = 0;
+(function (index) {
+    var template = "<sample />";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component && component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<sample message=\"Test\" />";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component && component.$inject($$(".m-example")[index]);
+})(index++);
+(function (index) {
+    var template = "<div class=\"g-row\">\n    <div class=\"g-col g-col-6\"><sample readonly /></div>\n    <div class=\"g-col g-col-6\"><sample disabled /></div>\n</div>";
+    var component = new RGUI.Component({
+        template: template
+    });
+    component && component.$inject($$(".m-example")[index]);
+})(index++);
+</script>
+</body>
+</html>
