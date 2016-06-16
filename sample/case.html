@@ -27,21 +27,23 @@
 <![endif]-->
 </head>
 <body>
-<div class="g-top g-top-fixed">
+<div class="g-top">
     <div class="g-topc">
-        <a class="u-logo" href="./"><h1>Regular UI</h1></a>
+        <a class="u-logo" href="./">Regular UI</a>
     </div>
 </div>
 <div class="g-bd"><div class="g-bdc"><div class="g-mn g-mn-center">
     <article class="m-article">
-        <h2>样例<small> Sample</small></h2>
-        <p>在<code>case.md</code>文件中，添加该组件的高级案例。</p>
-<h4 id="-">基本形式</h4>
+        <h1>样例<small> Sample</small></h1>
+        <h2 id="示例">示例</h2>
+<p>在<code>case.md</code>文件中，添加该组件的高级案例。</p>
+<h3 id="基本形式">基本形式</h3>
 <div class="m-example"></div>
 
 <pre class="lang-xml"><code><span class="cm-tagcm-bracket">&lt;</span><span class="cm-tag">sample</span> <span class="cm-tagcm-bracket">/&gt;</span>
 </code></pre>
 
+        
     </article>
 </div>
 </div></div><div class="g-ft">
@@ -60,6 +62,9 @@
 <script src="../js/index.js"></script>
 <script>
 var $$ = function(selector){return document.querySelectorAll(selector)};
+$$('.m-article > h2, .m-article > h3').forEach(function($heading) {
+    $heading.innerHTML = '<a href="#' + $heading.id + '">' + $heading.innerText + '</a>';
+});
 </script>
 <script>
 "use strict";
