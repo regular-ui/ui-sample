@@ -2,12 +2,10 @@
 
 Regular UI - Sample
 
-## Sample
+## Sample（样例）
 
-样例
-
-基本示例: http://regular-ui.github.io/ui-sample/sample/index.html
-高级案例: http://regular-ui.github.io/ui-sample/sample/case.html
+- 基础示例+API: https://regular-ui.github.io/ui-sample/sample/index.html
+- 进阶案例: https://regular-ui.github.io/ui-sample/sample/case.html
 
 ## Copyright and License
 
