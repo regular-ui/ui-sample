@@ -12,9 +12,10 @@ import template from './index.rgl';
  */
 let Sample = Component.extend({
     name: 'sample',
-    template: template,
+    template,
     /**
      * @protected
+     * @override
      */
     config() {
         this.data = Object.assign({
