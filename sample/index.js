@@ -1,4 +1,4 @@
-import {Component, _} from 'rgui-base';
+import { Component } from 'rgui-base';
 import template from './index.rgl';
 
 /**
@@ -10,7 +10,7 @@ import template from './index.rgl';
  * @param {boolean=true}            options.data.visible             => 是否显示
  * @param {string=''}               options.data.class               => 补充class
  */
-let Sample = Component.extend({
+const Sample = Component.extend({
     name: 'sample',
     template,
     /**
@@ -19,7 +19,7 @@ let Sample = Component.extend({
      */
     config() {
         this.data = Object.assign({
-            message: 'Hello World'
+            message: 'Hello World',
         }, this.data);
         this.supr();
     },
@@ -29,9 +29,9 @@ let Sample = Component.extend({
      * @param  {boolean} open 展开/收起状态。如果无此参数，则在两种状态之间切换。
      * @return {void}
      */
-     _onInput($event) {
+    _onInput($event) {
         this.$emit('input', $event);
-     }
+    },
 });
 
 export default Sample;
