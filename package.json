@@ -1,5 +1,5 @@
 {
-  "name": "rgui-sample",
+  "name": "rgui-ui-sample",
   "description": "Regular UI - Sample",
   "version": "0.2.0",
   "author": "Rainfore <rainforest92@126.com>",
@@ -11,6 +11,6 @@
   "keywords": ["regular", "ui", "sample"],
   "tags": ["regular", "ui", "sample"],
   "dependencies": {
-    "rgui-base": "0.2.0-alpha.1"
+    "rgui-ui-base": "0.2.0-alpha"
   }
 }
