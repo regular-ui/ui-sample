@@ -8,8 +8,8 @@
   "homepage": "http://regular-ui.github.io",
   "bugs": {"url": "http://github.com/regular-ui/ui-sample/issues"},
   "license": "MIT",
-  "keywords": ["regular", "ui", "sample"],
-  "tags": ["regular", "ui", "sample"],
+  "keywords": ["regular", "ui", "rgui", "sample"],
+  "tags": ["regular", "ui", "rgui", "sample"],
   "dependencies": {
     "rgui-ui-base": "0.2.0-alpha.2"
   }
