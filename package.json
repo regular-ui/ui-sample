@@ -11,6 +11,6 @@
   "keywords": ["regular", "ui", "rgui", "sample"],
   "tags": ["regular", "ui", "rgui", "sample"],
   "dependencies": {
-    "rgui-ui-base": "0.2.0-alpha.2"
+    "rgui-ui-base": "^0.2.0-alpha.2"
   }
 }
