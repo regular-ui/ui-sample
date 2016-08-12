@@ -21,8 +21,7 @@ Regular UI - Sample
 
 ## Sample（样例）
 
-- 基础示例+API: https://regular-ui.github.io/ui-sample/sample/index.html
-- 进阶案例: https://regular-ui.github.io/ui-sample/sample/case.html
+- 基础示例+进阶案例+API: https://regular-ui.github.io/ui-sample/sample/index.html
 
 ## Copyright and License
 
