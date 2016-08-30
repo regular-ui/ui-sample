@@ -18,9 +18,9 @@ const Sample = Component.extend({
      * @override
      */
     config() {
-        this.data = Object.assign({
+        this.defaults({
             message: 'Hello World',
-        }, this.data);
+        });
         this.supr();
     },
     /**

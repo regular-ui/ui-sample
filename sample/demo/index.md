@@ -1,6 +1,6 @@
 ## 示例
 
-在`index.md`文件中，添加该组件的基础文档示例。
+在这里添加该组件的基础文档示例。
 
 每个示例以`<div class="m-example"></div>`开头，后面添加相应的代码段。支持的代码段有：
 - `css`，会以`<style>`包裹css代码的形式添加到文档中；
@@ -32,4 +32,16 @@
     <div class="g-col g-col-6"><sample readonly /></div>
     <div class="g-col g-col-6"><sample disabled /></div>
 </div>
+```
+
+## 案例
+
+在这里添加该组件的高级案例。
+
+### 高级技巧
+
+<div class="m-example"></div>
+
+```xml
+<sample />
 ```
