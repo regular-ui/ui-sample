@@ -1,3 +1,3 @@
-import Sample from './sample';
+import Sample from './src/sample';
 
 export { Sample };
